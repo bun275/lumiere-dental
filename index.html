@@ -3,298 +3,360 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lumière Dental – Clinică stomatologică, zâmbete sănătoase fără stres</title>
-<meta name="description" content="Clinică stomatologică cu abordare blândă: estetică dentară, implantologie, ortodonție, profilaxie. Consultație inițială gratuită și rate fără dobândă.">
+<title>Lumière Dental – Stomatologie calmă, precisă și fără grabă</title>
+<meta name="description" content="Clinică stomatologică cu ritm calm: estetică dentară și fațete, implantologie, ortodonție și igienizare. Prima vizită include un plan de tratament scris.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --white:#fff; --cream:#faf6ef; --sand:#f1e9db; --sage:#8da48f; --sage-d:#4f6b55; --sage-l:#e3ebe1;
-  --sky:#dfeaf1; --ink:#26302b; --mut:#5d6a63; --line:#e5dccb;
-  --head:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;
-  --body:"Figtree","Segoe UI",Arial,sans-serif;
+  --ivory:#F7F5F0; --surface:#EFECE4; --ink:#18181B; --terra:#B45309; --terra-d:#C2410C;
+  --mut:#55555C; --line:#D9D4C8;
+  --serif:"Cormorant Garamond","Iowan Old Style",Georgia,serif;
+  --sans:"Plus Jakarta Sans","Segoe UI",Arial,sans-serif;
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
-body{background:var(--cream);color:var(--ink);font:400 18px/1.7 var(--body)}
+body{background:var(--ivory);color:var(--ink);font:400 17.5px/1.75 var(--sans)}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--sage-d);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
-h1,h2,h3{font-family:var(--head);font-weight:600;line-height:1.12;letter-spacing:-.3px;color:var(--ink)}
-h2{font-size:clamp(32px,4.4vw,48px);margin-bottom:14px}
-.btn{display:inline-flex;align-items:center;justify-content:center;font:600 17px var(--body);padding:15px 28px;border-radius:999px;border:2px solid transparent;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
-.btn-main{background:var(--sage-d);color:#fff}
-.btn-main:hover{background:#3d5643}
-.btn-soft{border-color:var(--sage-d);color:var(--sage-d)}
-.btn-soft:hover{background:var(--sage-l)}
-section{padding:96px 0}
-.lead{color:var(--mut);max-width:600px}
+:focus-visible{outline:2px solid var(--terra);outline-offset:4px;border-radius:2px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(22px,5vw,64px)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:.98;letter-spacing:-.02em}
+h2{font-size:clamp(44px,6.4vw,92px)}
+em{font-style:italic;color:var(--terra)}
+.btn{display:inline-flex;align-items:center;gap:12px;font:600 16px var(--sans);padding:17px 30px;background:var(--terra);color:#fff;text-decoration:none;border:0;border-radius:999px;cursor:pointer;transition:background .25s,transform .25s}
+.btn:hover{background:var(--terra-d);transform:translateY(-2px)}
+.btn span{transition:transform .25s}
+.btn:hover span{transform:translateX(4px)}
+.link{font-weight:600;text-decoration:underline;text-decoration-color:var(--terra);text-decoration-thickness:2px;text-underline-offset:6px}
+section{padding:clamp(88px,12vw,168px) 0}
 
-header{background:rgba(250,246,239,.92);backdrop-filter:blur(8px);position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;height:74px;gap:16px}
-.logo{font:700 25px var(--head);text-decoration:none;display:flex;align-items:center;gap:10px}
-.logo svg{width:30px;height:30px}
-nav{display:flex;gap:28px;font-size:16px;font-weight:500}
-nav a{text-decoration:none;color:var(--mut)}
-nav a:hover{color:var(--ink)}
-.bar .btn{padding:10px 20px;font-size:16px}
+/* header */
+header .bar{display:flex;align-items:baseline;justify-content:space-between;padding-top:30px}
+.logo{font:500 32px var(--serif);text-decoration:none;letter-spacing:-.01em}
+.logo small{font:500 12px var(--sans);letter-spacing:.22em;text-transform:uppercase;margin-left:12px;color:var(--mut)}
+.hl{display:flex;gap:34px;align-items:baseline;font-size:15.5px;font-weight:500}
+.hl a{text-decoration:none}
+.hl a.link{text-decoration:underline}
 
 /* hero */
-.hero{padding:72px 0 96px;position:relative;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-.hero h1{font-size:clamp(42px,6.2vw,72px);margin-bottom:22px}
-.hero p{font-size:20px;color:var(--mut);max-width:520px;margin-bottom:32px}
-.hero-btns{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px}
-.promise{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px 26px;font-size:16px;color:var(--mut)}
-.promise li::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--sage);margin-right:9px}
-.art{position:relative;aspect-ratio:1/1.02;max-width:480px;justify-self:center;width:100%}
-.blob{position:absolute;border-radius:58% 42% 55% 45%/50% 55% 45% 50%}
-.b1{inset:4% 0 8% 6%;background:var(--sage-l);animation:breathe 9s ease-in-out infinite}
-.b2{inset:30% 38% 0 0;background:var(--sky);opacity:.9;animation:breathe 11s ease-in-out infinite reverse}
-@keyframes breathe{50%{transform:scale(1.04) rotate(2deg)}}
-.smile{position:absolute;inset:0;width:100%;height:100%}
-.smile path.s{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 2.2s .4s ease-out forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
-.float{position:absolute;right:-6px;bottom:6%;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 20px;box-shadow:0 14px 34px rgba(60,70,60,.12);max-width:230px}
-.float b{display:block;font:600 19px var(--head)}
-.float span{font-size:14.5px;color:var(--mut);line-height:1.45;display:block}
+.hero{padding-top:clamp(56px,8vw,110px);padding-bottom:clamp(88px,10vw,150px)}
+.hg{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.7fr);gap:clamp(30px,6vw,90px);align-items:end}
+.hero h1{font-size:clamp(54px,9.4vw,150px);line-height:.9;letter-spacing:-.035em;margin-bottom:clamp(36px,5vw,70px)}
+.hero h1 span{display:block}
+.hero h1 span:nth-child(2){padding-left:clamp(0px,6vw,110px)}
+.hero h1 span:nth-child(3){padding-left:clamp(0px,2vw,36px)}
+.first{max-width:440px;margin-left:clamp(0px,6vw,110px)}
+.first p{margin-bottom:28px;font-size:18.5px}
+.first p b{font-weight:600}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:18px 30px}
+.arch{position:relative;max-width:380px;justify-self:end;width:100%}
+.arch svg{display:block;width:100%;height:auto;animation:float 9s ease-in-out infinite}
+.arch figcaption{font:italic 400 19px/1.4 var(--serif);margin-top:16px;color:var(--mut);max-width:300px}
+@keyframes float{50%{transform:translateY(-10px)}}
+.hours{margin-top:clamp(56px,7vw,100px);padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 44px;font-size:15px;color:var(--mut)}
+.hours b{color:var(--ink);font-weight:600}
 
 /* treatments */
-.white{background:var(--white)}
-.tr{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:44px}
-.t{background:var(--cream);border:1px solid var(--line);border-radius:22px;padding:34px;display:grid;grid-template-columns:56px 1fr;gap:20px}
-.ic{width:56px;height:56px;border-radius:16px;background:var(--sage-l);display:grid;place-items:center}
-.ic svg{width:28px;height:28px;stroke:var(--sage-d);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.t h3{font-size:27px;margin-bottom:8px}
-.t p{color:var(--mut);font-size:16.5px;margin-bottom:12px}
-.t dl{font-size:15px;display:grid;gap:4px}
-.t dt{display:inline;font-weight:600;color:var(--sage-d)}
-.t dd{display:inline;color:var(--mut)}
-.t dd::after{content:"";display:block}
+.surface{background:var(--surface)}
+.th{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px 60px;margin-bottom:clamp(40px,6vw,80px)}
+.th p{max-width:360px;color:var(--mut)}
+.acc{border-top:1px solid var(--ink)}
+.item{border-bottom:1px solid var(--line)}
+.item:last-child{border-bottom-color:var(--ink)}
+.tr{display:grid;grid-template-columns:70px 1fr auto 44px;align-items:baseline;gap:8px 24px;width:100%;padding:clamp(26px,3.4vw,44px) 0;background:none;border:0;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.tr .n{font:500 20px var(--serif);color:var(--terra)}
+.tr h3{font-size:clamp(34px,5vw,68px);transition:transform .35s cubic-bezier(.2,.7,.2,1),color .25s}
+.tr:hover h3{transform:translateX(10px);color:var(--terra)}
+.tr .tz{font-size:14.5px;color:var(--mut);text-align:right}
+.tr .pl{position:relative;width:28px;height:28px;justify-self:end;align-self:center}
+.tr .pl::before,.tr .pl::after{content:"";position:absolute;left:50%;top:50%;width:20px;height:1.5px;background:var(--ink);transform:translate(-50%,-50%);transition:transform .35s}
+.tr .pl::after{transform:translate(-50%,-50%) rotate(90deg)}
+.item.open .pl::after{transform:translate(-50%,-50%) rotate(0)}
+.item.open .tr h3{color:var(--terra)}
+.pn{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.2,.7,.2,1)}
+.item.open .pn{grid-template-rows:1fr}
+.pn>div{overflow:hidden;visibility:hidden;transition:visibility 0s .5s}
+.item.open .pn>div{visibility:visible;transition-delay:0s}
+.pi{display:grid;grid-template-columns:70px 1fr 1fr;gap:20px 56px;padding:4px 0 clamp(34px,4vw,56px)}
+.pi h4{font:600 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:10px}
+.pi p{color:var(--ink);max-width:460px;font-size:17px}
+.pi .meta{grid-column:2/-1;display:flex;flex-wrap:wrap;gap:6px 40px;padding-top:20px;border-top:1px solid var(--line);font-size:15px;color:var(--mut)}
+.pi .meta b{color:var(--ink);font-weight:600}
+.note{margin-top:30px;font-size:14.5px;color:var(--mut)}
 
-/* team */
-.team{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
-.doc{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:30px;text-align:left}
-.av{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font:600 30px var(--head);color:var(--sage-d);margin-bottom:18px}
-.doc:nth-child(1) .av{background:var(--sage-l)}
-.doc:nth-child(2) .av{background:var(--sky)}
-.doc:nth-child(3) .av{background:var(--sand)}
-.doc h3{font-size:24px}
-.role{color:var(--sage-d);font-weight:600;font-size:15.5px;margin:4px 0 14px}
-.doc blockquote{color:var(--mut);font-size:16.5px;border-left:3px solid var(--sage);padding-left:14px}
+/* doctors */
+.dh{max-width:760px;margin-bottom:clamp(44px,6vw,84px)}
+.dh h2{margin-bottom:18px}
+.dh p{color:var(--mut);max-width:440px}
+.band{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+.doc{padding:clamp(28px,3.6vw,48px) clamp(20px,3vw,44px) clamp(32px,4vw,56px)}
+.doc+.doc{border-left:1px solid var(--line)}
+.doc:first-child{padding-left:0}
+.doc .q{font:italic 400 clamp(24px,2.4vw,32px)/1.2 var(--serif);margin-bottom:30px}
+.doc .q::before{content:"“";display:block;font:500 80px/.6 var(--serif);color:var(--terra);margin-bottom:6px}
+.doc h3{font-size:30px;margin-bottom:4px}
+.doc .role{font-size:14.5px;color:var(--mut);line-height:1.5}
 
-/* trust */
-.trust{background:var(--sage-d);color:#fff}
-.trust h2{color:#fff}
-.trust .lead{color:#d9e4da}
-.tg{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:44px}
-.tg div{border-top:2px solid rgba(255,255,255,.35);padding-top:18px}
-.tg h3{font-size:23px;color:#fff;margin-bottom:8px}
-.tg p{font-size:16px;color:#d9e4da}
-.offer{margin-top:48px;background:#fff;color:var(--ink);border-radius:22px;padding:30px 34px;display:flex;flex-wrap:wrap;gap:20px 36px;align-items:center;justify-content:space-between}
-.offer h3{font-size:26px;margin-bottom:4px}
-.offer p{color:var(--mut);font-size:16.5px;max-width:560px}
+/* form */
+.fg{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,8vw,120px);align-items:start}
+.fg h2{margin-bottom:26px}
+.fg .lead{color:var(--mut);max-width:400px}
+.ct{margin-top:44px;display:grid;gap:22px;font-size:16px}
+.ct div{padding-top:14px;border-top:1px solid var(--line)}
+.ct small{display:block;font-size:13px;color:var(--mut);letter-spacing:.04em}
+.ct a,.ct b{font:500 24px var(--serif);text-decoration:none;font-weight:500}
+form{padding-top:6px}
+.fl{margin-bottom:34px;position:relative}
+label{display:block;font-size:13.5px;font-weight:600;color:var(--mut);margin-bottom:2px;letter-spacing:.03em}
+input,select{width:100%;font:500 22px var(--serif);padding:10px 0 12px;border:0;border-bottom:1.5px solid var(--ink);border-radius:0;background:transparent;color:var(--ink);appearance:none;-webkit-appearance:none}
+select{background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 12px) 55%,calc(100% - 6px) 55%;background-size:6px 6px;background-repeat:no-repeat;padding-right:30px}
+input::placeholder{color:#9A9AA0}
+input:focus,select:focus{outline:none;border-bottom-color:var(--terra);box-shadow:0 1.5px 0 var(--terra)}
+.bad{border-bottom-color:#B91C1C!important}
+.err{display:none;color:#B91C1C;font-size:14px;margin-top:6px}
+.bad+.err{display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
+.ok{display:none;margin-top:26px;font:italic 500 22px/1.4 var(--serif);border-left:2px solid var(--terra);padding-left:18px}
+.fine{margin-top:20px;font-size:13.5px;color:var(--mut)}
 
-/* booking */
-.book{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
-.steps{list-style:none;padding:0;margin-top:26px;display:grid;gap:18px}
-.steps li{display:grid;grid-template-columns:34px 1fr;gap:12px;color:var(--mut);font-size:16.5px}
-.steps li::before{content:"✓";display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--sage-l);color:var(--sage-d);font-weight:700;font-size:15px}
-form{background:var(--white);border:1px solid var(--line);border-radius:24px;padding:34px;box-shadow:0 18px 40px rgba(60,70,60,.07)}
-.field{margin-bottom:20px}
-label{display:block;font-weight:600;font-size:15.5px;margin-bottom:6px}
-input[type=text],input[type=tel],select{width:100%;font:inherit;font-size:17px;padding:14px 16px;border:1.5px solid #d3cab9;border-radius:12px;background:var(--cream);color:var(--ink)}
-input:focus,select:focus{outline:none;border-color:var(--sage-d);box-shadow:0 0 0 4px rgba(79,107,85,.18)}
-.bad{border-color:#b3423a!important}
-.msg{display:none;color:#a23a32;font-size:14.5px;margin-top:4px}
-.bad+.msg{display:block}
-.chk{display:flex;gap:10px;font-size:14.5px;color:var(--mut);margin:4px 0 22px;align-items:flex-start}
-.chk input{margin-top:5px;accent-color:var(--sage-d);width:18px;height:18px}
-.chk label{font-weight:400;font-size:14.5px;margin:0}
-.ok{display:none;margin-top:18px;background:var(--sage-l);border-radius:14px;padding:18px;color:#2f4a36}
+footer{background:var(--surface);padding:48px 0 40px;font-size:14.5px;color:var(--mut)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 40px}
 
-footer{background:#212a25;color:#c7d0c9;padding:64px 0 28px;font-size:16px}
-.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-bottom:40px}
-footer h3{font-size:19px;color:#fff;margin-bottom:12px}
-footer ul{list-style:none;padding:0;display:grid;gap:7px}
-footer a{text-decoration:none}
-footer a:hover{color:#fff;text-decoration:underline}
-footer .logo{color:#fff;margin-bottom:12px}
-.copy{border-top:1px solid #3a463f;padding-top:22px;font-size:14px;color:#98a49b;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+/* schițe */
+.sk *,.ps *{fill:none;stroke:var(--terra);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1}
+.sk *{stroke-dashoffset:calc(1 - var(--d,1))}
+.draw *{stroke-dashoffset:1;animation:draw 2.6s .7s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.arch svg.tooth{position:absolute;left:-20%;bottom:12%;width:56%;height:auto;animation:none;translate:0 calc(var(--sy,0)*-.12px)}
+.srow{display:block;width:min(640px,100%);height:auto;margin:0 0 clamp(36px,5vw,64px)}
+.wave{display:block;width:100%;height:80px;margin:0 0 clamp(30px,4vw,56px)}
+.smile{display:block;width:150px;height:auto;margin:-4px 0 22px}
+.ps{grid-column:4;grid-row:1;align-self:start;justify-self:end;width:100%;max-width:170px;height:auto}
+.ps *{stroke-dashoffset:1;transition:stroke-dashoffset 1.3s ease}
+.item.open .ps *{stroke-dashoffset:0;transition-delay:.3s}
+.pi{grid-template-columns:70px 1fr 1fr minmax(110px,170px)}
+@media (max-width:900px){.ps{grid-column:1;grid-row:auto;justify-self:start;max-width:110px}}
+@media (prefers-reduced-motion:reduce){.draw *,.ps *{stroke-dashoffset:0!important}}
+/* mișcare legată de derulare */
+.prog{position:fixed;top:0;left:0;right:0;height:2px;background:var(--terra);transform-origin:0 50%;transform:scaleX(var(--p,0));z-index:60;pointer-events:none}
+.arch{translate:0 calc(var(--sy,0)*-.08px)}
+.hero h1 span:nth-child(2){translate:calc(var(--sy,0)*.06px) 0}
+.hero h1 span:nth-child(3){translate:calc(var(--sy,0)*.12px) 0}
+/* animații */
+@keyframes up{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+.hero h1 span,.first,.arch,.hours{animation:up 1s cubic-bezier(.2,.7,.2,1) both}
+.hero h1 span:nth-child(1){animation-delay:.05s}.hero h1 span:nth-child(2){animation-delay:.18s}.hero h1 span:nth-child(3){animation-delay:.31s}
+.first{animation-delay:.5s}.arch{animation-delay:.4s}.hours{animation-delay:.7s}
+.js .rv{opacity:0;transform:translateY(var(--ty,30px));transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
 
-@media (max-width:960px){
-  .hero-grid,.book{grid-template-columns:1fr}
-  .tg{grid-template-columns:repeat(2,1fr)}
-  .team{grid-template-columns:1fr}
-  .tr{grid-template-columns:1fr}
-  .fg{grid-template-columns:1fr 1fr}
-  nav{display:none}
+@media (max-width:900px){
+  .hg,.fg{grid-template-columns:1fr}
+  .arch{justify-self:start;max-width:300px}
+  .hl a:not(.btn){display:none}
+  .band{grid-template-columns:1fr}
+  .doc,.doc:first-child{padding:30px 0}
+  .doc+.doc{border-left:0;border-top:1px solid var(--line)}
+  .tr{grid-template-columns:44px 1fr 32px}
+  .tr .tz{display:none}
+  .pi{grid-template-columns:1fr;padding-left:44px}
+  .pi .meta{grid-column:1}
 }
 @media (max-width:560px){
   body{font-size:17px}
-  section{padding:68px 0}
-  .t{grid-template-columns:1fr;padding:26px}
-  .tg,.fg{grid-template-columns:1fr}
-  .hero-btns .btn{width:100%}
-  form{padding:24px}
-  .float{right:0}
+  .logo small{display:none}
+  .two{grid-template-columns:1fr}
+  .cta .btn{width:100%;justify-content:center}
+  .first{margin-left:0}
 }
-@media (prefers-reduced-motion:reduce){.blob{animation:none}.smile path.s{animation:none;stroke-dashoffset:0}*{scroll-behavior:auto!important;transition:none!important}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv{opacity:1;transform:none}
+}
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+<div class="prog" aria-hidden="true"></div>
 
 <header>
   <div class="wrap bar">
-    <a class="logo" href="#top" aria-label="Lumière Dental – acasă">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#e3ebe1"/><path d="M7 15c3 8 15 8 18 0" fill="none" stroke="#4f6b55" stroke-width="2.4" stroke-linecap="round"/></svg>
-      Lumière Dental
-    </a>
-    <nav aria-label="Navigare principală">
-      <a href="#tratamente">Tratamente</a><a href="#echipa">Echipa</a><a href="#incredere">De ce noi</a><a href="#programare">Programare</a>
+    <a class="logo" href="#top" aria-label="Lumière Dental – acasă">Lumière<small>Dental</small></a>
+    <nav class="hl" aria-label="Navigare principală">
+      <a href="#tratamente">Tratamente</a>
+      <a href="#medici">Medici</a>
+      <a class="btn" href="#programare" style="padding:11px 22px;font-size:15px;color:#fff">Programare</a>
     </nav>
-    <a class="btn btn-main" href="#programare">Programează-te</a>
   </div>
 </header>
 
 <main id="top">
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <h1>Zâmbete sănătoase, fără stres și fără grabă</h1>
-      <p>La Lumière Dental îți explicăm fiecare pas pe înțelesul tău, lucrăm blând și îți respectăm ritmul. Prima consultație este gratuită și include un plan de tratament scris.</p>
-      <div class="hero-btns">
-        <a class="btn btn-main" href="#programare">Programează o consultație</a>
-        <a class="btn btn-soft" href="#tratamente">Vezi tratamentele</a>
-      </div>
-      <ul class="promise">
-        <li>Ședințe de 45 de minute, fără alergat</li>
-        <li>Preț comunicat înainte de tratament</li>
-        <li>Anestezie atentă, pentru confort</li>
-      </ul>
-    </div>
-    <div class="art" aria-hidden="true">
-      <div class="blob b1"></div><div class="blob b2"></div>
-      <svg class="smile" viewBox="0 0 400 400">
-        <path class="s" d="M95 190 C130 300 270 300 305 190" fill="none" stroke="#4f6b55" stroke-width="12" stroke-linecap="round"/>
-        <circle cx="140" cy="140" r="9" fill="#4f6b55" opacity=".55"/><circle cx="260" cy="140" r="9" fill="#4f6b55" opacity=".55"/>
-      </svg>
-      <div class="float"><b>Prima vizită</b><span>Discuție, examinare și plan de tratament, fără costuri.</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="tratamente" class="white">
   <div class="wrap">
-    <h2>Tratamente explicate simplu</h2>
-    <p class="lead">Nu trebuie să știi termenii medicali. Îți spunem ce facem, cât durează și la ce să te aștepți.</p>
-    <div class="tr">
-      <article class="t">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 5 5.3.5-4 3.6 1.2 5.2L12 14.5 7.3 17.3l1.2-5.2-4-3.6L9.8 8 12 3Z"/></svg></div>
-        <div>
-          <h3>Estetică dentară și fațete</h3>
-          <p>Dacă dinții tăi sunt ciobiți, pătați sau inegali, fațetele subțiri din ceramică îi fac să arate natural și uniform. Începem cu o simulare, ca să vezi rezultatul înainte să decizi.</p>
-          <dl><div><dt>Durată: </dt><dd>2–3 vizite</dd></div><div><dt>Potrivit pentru: </dt><dd>zâmbet neuniform sau dinți colorați</dd></div></dl>
-        </div>
-      </article>
-      <article class="t">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M8 3h8l-1 6h-6L8 3Z"/><path d="M12 9v12"/><path d="M9.5 13h5M9.5 17h5"/></svg></div>
-        <div>
-          <h3>Implantologie</h3>
-          <p>Un implant înlocuiește rădăcina unui dinte lipsă și susține o coroană care arată și se simte ca dintele tău. Planificăm totul digital, iar procedura se face sub anestezie locală.</p>
-          <dl><div><dt>Durată: </dt><dd>vindecare de 3–6 luni, cu controale scurte</dd></div><div><dt>Potrivit pentru: </dt><dd>unul sau mai mulți dinți lipsă</dd></div></dl>
-        </div>
-      </article>
-      <article class="t">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 10c0-3 3-4 8-4s8 1 8 4-3 8-8 8-8-5-8-8Z"/><path d="M8 12h8"/></svg></div>
-        <div>
-          <h3>Ortodonție și alignere</h3>
-          <p>Alinierea dinților se poate face cu aparat clasic sau cu alignere transparente, practic invizibile și ușor de scos la masă. Îți arătăm pe computer cum se vor mișca dinții.</p>
-          <dl><div><dt>Durată: </dt><dd>de obicei 6–18 luni</dd></div><div><dt>Potrivit pentru: </dt><dd>copii, adolescenți și adulți</dd></div></dl>
-        </div>
-      </article>
-      <article class="t">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11Z"/><path d="M9.5 14.5l1.8 1.8 3.2-3.6"/></svg></div>
-        <div>
-          <h3>Profilaxie și igienizare</h3>
-          <p>Detartraj, periaj profesional și sfaturi de igienă personalizate. Previne cariile și problemele gingivale și este cel mai blând mod de a începe. Recomandăm o vizită la 6 luni.</p>
-          <dl><div><dt>Durată: </dt><dd>aproximativ 45 de minute</dd></div><div><dt>Potrivit pentru: </dt><dd>toată familia, inclusiv copiii</dd></div></dl>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="echipa">
-  <div class="wrap">
-    <h2>Medicii care au grijă de zâmbetul tău</h2>
-    <p class="lead">O echipă mică, ca să te vadă mereu aceleași fețe cunoscute.</p>
-    <div class="team">
-      <article class="doc">
-        <div class="av" aria-hidden="true">IM</div>
-        <h3>Dr. Ioana Marinescu</h3>
-        <div class="role">Medic stomatolog, estetică dentară și ortodonție</div>
-        <blockquote>„Încep mereu cu o discuție despre ce îți dorești. Un zâmbet frumos trebuie să arate ca tine, nu ca al altcuiva.”</blockquote>
-      </article>
-      <article class="doc">
-        <div class="av" aria-hidden="true">AV</div>
-        <h3>Dr. Andrei Vasilescu</h3>
-        <div class="role">Medic specialist, implantologie și chirurgie orală</div>
-        <blockquote>„Pacienții se tem de necunoscut, așa că le arăt planul pe ecran și le explic fiecare etapă înainte de a începe.”</blockquote>
-      </article>
-      <article class="doc">
-        <div class="av" aria-hidden="true">EP</div>
-        <h3>Dr. Elena Popa</h3>
-        <div class="role">Medic stomatolog, profilaxie, parodontologie și copii</div>
-        <blockquote>„Cu cei mici lucrez prin joacă și răbdare. Prima vizită trebuie să fie plăcută, ca să vină cu drag și data viitoare.”</blockquote>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="incredere" class="trust">
-  <div class="wrap">
-    <h2>Transparență în tot ce facem</h2>
-    <p class="lead">Știi dinainte ce urmează, cât costă și cum avem grijă de siguranța ta.</p>
-    <div class="tg">
-      <div><h3>Tehnologie digitală</h3><p>Radiografii digitale cu doză redusă, scanare 3D fără amprente cu pastă și planificare pe computer pentru implanturi și alignere.</p></div>
-      <div><h3>Sterilizare riguroasă</h3><p>Instrumentarul este sterilizat în autoclav, ambalat individual și deschis în fața ta. Folosim materiale de unică folosință acolo unde se poate.</p></div>
-      <div><h3>Plan și preț în scris</h3><p>După consultație primești un plan cu etape și costuri. Nu adăugăm nimic fără acordul tău.</p></div>
-      <div><h3>Garanție la lucrări</h3><p>Oferim garanție scrisă pentru lucrările protetice și implanturi, cu condiția controalelor periodice.</p></div>
-    </div>
-    <div class="offer">
+    <div class="hg">
       <div>
-        <h3>Consultație inițială gratuită și rate fără dobândă</h3>
-        <p>Pentru tratamente de peste 1.500 lei poți plăti în până la 6 rate fără dobândă, fără comision de analiză. Îți calculăm rata în clinică, în câteva minute.</p>
+        <h1><span>Stomatologie</span><span><em>calmă,</em> precisă</span><span>și fără grabă</span></h1>
+        <div class="first">
+          <p><b>Prima vizită durează 45 de minute.</b> Stăm de vorbă, te examinăm cu răbdare și îți dăm un plan de tratament scris, fără costuri și fără presiune.</p>
+          <div class="cta">
+            <a class="btn" href="#programare">Programează prima vizită <span aria-hidden="true">→</span></a>
+            <a class="link" href="#tratamente">Vezi tratamentele</a>
+          </div>
+        </div>
       </div>
-      <a class="btn btn-main" href="#programare">Programează consultația</a>
+      <figure class="arch" aria-hidden="true">
+        <svg viewBox="0 0 380 480">
+          <defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E3D4"/><stop offset="1" stop-color="#EFECE4"/></linearGradient></defs>
+          <path d="M10 480V190a180 180 0 0 1 360 0v290Z" fill="url(#ag)"/>
+          <path d="M44 480V192a146 146 0 0 1 292 0v288" fill="none" stroke="#B45309" stroke-opacity=".35" stroke-width="1.3"/>
+          <path d="M82 480V194a108 108 0 0 1 216 0v286" fill="none" stroke="#B45309" stroke-opacity=".5" stroke-width="1.3"/>
+          <path d="M120 480V196a70 70 0 0 1 140 0v284" fill="none" stroke="#B45309" stroke-opacity=".7" stroke-width="1.3"/>
+          <circle cx="190" cy="196" r="26" fill="#B45309" fill-opacity=".85"/>
+        </svg>
+        <svg class="sk draw tooth" viewBox="0 0 200 240" aria-hidden="true">
+          <path pathLength="1" d="M60 40C40 40 24 56 24 82C24 108 36 120 40 150C44 184 46 214 62 214C78 214 78 176 100 176C122 176 122 214 138 214C154 214 156 184 160 150C164 120 176 108 176 82C176 56 160 40 140 40C124 40 116 50 100 50C84 50 76 40 60 40Z"/>
+          <path pathLength="1" d="M52 70C46 78 46 90 50 100"/>
+          <path pathLength="1" d="M82 70C92 80 108 80 118 70"/>
+          <path pathLength="1" d="M168 224C180 196 176 166 160 146M170 196c10-4 16-12 16-22M165 172c-10-2-16-10-16-20"/>
+        </svg>
+        <figcaption>Un ritm liniștit, fără sala de așteptare plină.</figcaption>
+      </figure>
+    </div>
+    <div class="hours"><span><b>Luni – Vineri</b> 8:00 – 20:00</span><span><b>Sâmbătă</b> 9:00 – 14:00</span><span>Str. Teilor nr. 8, Bacău</span></div>
+  </div>
+</section>
+
+<section class="surface" id="tratamente">
+  <div class="wrap">
+    <div class="th rv">
+      <h2>Tratamente, <em>explicate</em> pe îndelete</h2>
+      <p>Apasă pe un tratament ca să afli ce presupune și cum se simte, înainte să ajungi la noi.</p>
+    </div>
+    <svg class="sk scrub srow" viewBox="0 0 600 150" aria-hidden="true">
+      <path pathLength="1" d="M20 46C160 120 440 120 580 46"/>
+      <path pathLength="1" d="M20 46C160 150 440 150 580 46"/>
+      <path pathLength="1" d="M78 70V80M147 88V104M222 98V119M300 101V124M378 98V119M453 88V104M522 70V80"/>
+    </svg>
+    <div class="acc rv" id="acc">
+      <div class="item open">
+        <button class="tr" aria-expanded="true" aria-controls="p1" id="b1"><span class="n">01</span><h3>Estetică și fațete</h3><span class="tz">2–3 vizite</span><span class="pl" aria-hidden="true"></span></button>
+        <div class="pn" id="p1" role="region" aria-labelledby="b1"><div><div class="pi">
+          <span></span>
+          <div><h4>Ce presupune</h4><p>Începem cu o discuție și o simulare digitală a zâmbetului, ca să vezi rezultatul dinainte. Apoi pregătim dinții cât mai puțin posibil, luăm amprenta digitală și montăm fațete provizorii. După câteva zile fixăm fațetele definitive, din ceramică.</p></div>
+          <div><h4>Cum se simte</h4><p>Totul se face sub anestezie locală, deci nu simți durere. După tratament poate apărea o sensibilitate la rece, care trece de obicei în una–două zile.</p></div>
+          <svg class="ps" viewBox="0 0 160 160" aria-hidden="true">
+            <path pathLength="1" d="M56 28C42 28 38 52 44 82C48 104 50 134 62 134C72 134 72 108 80 108C88 108 88 134 98 134C110 134 112 104 116 82C122 52 118 28 104 28C94 28 90 34 80 34C70 34 66 28 56 28Z"/>
+            <path pathLength="1" d="M52 56C50 66 52 78 56 86"/>
+            <path pathLength="1" d="M128 40l-6 8M140 58l-10 3M134 24l-3 10"/>
+          </svg>
+          <div class="meta"><span><b>Durată:</b> 2–3 vizite</span><span><b>Potrivit pentru:</b> dinți colorați, ciobiți sau cu spații</span></div>
+        </div></div></div>
+      </div>
+      <div class="item">
+        <button class="tr" aria-expanded="false" aria-controls="p2" id="b2"><span class="n">02</span><h3>Implantologie</h3><span class="tz">vindecare 3–6 luni</span><span class="pl" aria-hidden="true"></span></button>
+        <div class="pn" id="p2" role="region" aria-labelledby="b2"><div><div class="pi">
+          <span></span>
+          <div><h4>Ce presupune</h4><p>Planificăm totul pe computer, după o scanare 3D. Implantul se introduce într-o ședință de 30–60 de minute, apoi lași osul să se vindece 3–6 luni. La final montăm coroana, care arată și se simte ca un dinte natural.</p></div>
+          <div><h4>Cum se simte</h4><p>Sub anestezie locală simți doar presiune și vibrații, fără durere. După aceea poate apărea un disconfort asemănător unei extracții și o ușoară umflătură de două–trei zile.</p></div>
+          <svg class="ps" viewBox="0 0 160 160" aria-hidden="true">
+            <path pathLength="1" d="M46 18C36 18 32 34 36 46C40 58 120 58 124 46C128 34 124 18 114 18C102 18 92 24 80 24C68 24 58 18 46 18Z"/>
+            <path pathLength="1" d="M64 58C64 92 72 128 80 142C88 128 96 92 96 58"/>
+            <path pathLength="1" d="M68 74H92M68 88H92M70 102H90M72 116H88"/>
+          </svg>
+          <div class="meta"><span><b>Durată:</b> câteva vizite scurte, pe parcursul vindecării</span><span><b>Potrivit pentru:</b> unul sau mai mulți dinți lipsă</span></div>
+        </div></div></div>
+      </div>
+      <div class="item">
+        <button class="tr" aria-expanded="false" aria-controls="p3" id="b3"><span class="n">03</span><h3>Ortodonție</h3><span class="tz">6–18 luni</span><span class="pl" aria-hidden="true"></span></button>
+        <div class="pn" id="p3" role="region" aria-labelledby="b3"><div><div class="pi">
+          <span></span>
+          <div><h4>Ce presupune</h4><p>Scanăm dinții în 3D și îți arătăm pe ecran cum se vor mișca. Poți alege alignere transparente, pe care le schimbi la una–două săptămâni, sau un aparat fix. Controalele au loc la 6–8 săptămâni.</p></div>
+          <div><h4>Cum se simte</h4><p>Simți o presiune ușoară în primele zile după fiecare set nou sau reglaj. Nu doare, e mai degrabă o senzație de strângere, care dispare repede.</p></div>
+          <svg class="ps" viewBox="0 0 160 160" aria-hidden="true">
+            <path pathLength="1" d="M8 54H152"/>
+            <path pathLength="1" d="M14 66h22v40a11 11 0 0 1-22 0ZM44 60h22v42a11 11 0 0 1-22 0ZM74 68h22v38a11 11 0 0 1-22 0ZM104 62h22v42a11 11 0 0 1-22 0ZM134 66h18v38a9 9 0 0 1-18 0Z"/>
+            <path pathLength="1" d="M8 114C60 138 100 138 152 114"/>
+          </svg>
+          <div class="meta"><span><b>Durată:</b> de obicei 6–18 luni</span><span><b>Potrivit pentru:</b> copii, adolescenți și adulți</span></div>
+        </div></div></div>
+      </div>
+      <div class="item">
+        <button class="tr" aria-expanded="false" aria-controls="p4" id="b4"><span class="n">04</span><h3>Igienizare</h3><span class="tz">aprox. 45 min</span><span class="pl" aria-hidden="true"></span></button>
+        <div class="pn" id="p4" role="region" aria-labelledby="b4"><div><div class="pi">
+          <span></span>
+          <div><h4>Ce presupune</h4><p>Îndepărtăm tartrul cu ultrasunete, curățăm depunerile cu jet de aer și pulbere fină, lustruim dinții și aplicăm fluor. La final primești sfaturi de igienă potrivite pentru tine.</p></div>
+          <div><h4>Cum se simte</h4><p>Ca un gâdilat ușor, uneori cu puțină sensibilitate la nivelul gingiilor. Dacă ești sensibil, folosim anestezie topică, ca să fii confortabil.</p></div>
+          <svg class="ps" viewBox="0 0 160 160" aria-hidden="true">
+            <path pathLength="1" d="M56 28C42 28 38 52 44 82C48 104 50 134 62 134C72 134 72 108 80 108C88 108 88 134 98 134C110 134 112 104 116 82C122 52 118 28 104 28C94 28 90 34 80 34C70 34 66 28 56 28Z"/>
+            <path pathLength="1" d="M134 30l3 9 9 3-9 3-3 9-3-9-9-3 9-3Z"/>
+            <path pathLength="1" d="M24 44l2 6 6 2-6 2-2 6-2-6-6-2 6-2Z"/>
+            <circle pathLength="1" cx="132" cy="98" r="6"/><circle pathLength="1" cx="22" cy="112" r="9"/>
+          </svg>
+          <div class="meta"><span><b>Durată:</b> aproximativ 45 de minute</span><span><b>Recomandat:</b> o dată la 6 luni, pentru toată familia</span></div>
+        </div></div></div>
+      </div>
+    </div>
+    <p class="note rv">Informațiile sunt generale. Planul concret îl stabilește medicul după consultație.</p>
+  </div>
+</section>
+
+<section id="medici">
+  <div class="wrap">
+    <div class="dh rv">
+      <h2>Oamenii din <em>spatele</em> zâmbetelor</h2>
+      <p>O echipă mică, ca să te întâlnești mereu cu aceleași fețe cunoscute.</p>
+    </div>
+    <svg class="sk scrub wave" viewBox="0 0 1240 90" preserveAspectRatio="none" aria-hidden="true">
+      <path pathLength="1" d="M0 50C140 10 260 90 420 50S700 10 840 50 1100 90 1240 40"/>
+    </svg>
+    <div class="band rv">
+      <article class="doc">
+        <p class="q">Un zâmbet frumos trebuie să arate ca tine, nu ca al altcuiva.</p>
+        <h3>Dr. Ioana Marinescu</h3>
+        <div class="role">Estetică dentară și ortodonție</div>
+      </article>
+      <article class="doc">
+        <p class="q">Îți arăt planul pe ecran și îți explic fiecare etapă înainte să începem.</p>
+        <h3>Dr. Andrei Vasilescu</h3>
+        <div class="role">Implantologie și chirurgie orală</div>
+      </article>
+      <article class="doc">
+        <p class="q">Cu cei mici lucrez prin joacă și răbdare, ca să vină cu drag.</p>
+        <h3>Dr. Elena Popa</h3>
+        <div class="role">Igienizare, parodontologie și stomatologie pentru copii</div>
+      </article>
     </div>
   </div>
 </section>
 
-<section id="programare" class="white">
-  <div class="wrap book">
-    <div>
-      <h2>Programează-te în câteva clicuri</h2>
-      <p class="lead">Spune-ne ce te interesează și când îți convine. Te sunăm noi, în timpul programului, pentru confirmare.</p>
-      <ul class="steps">
-        <li>Te sunăm în maximum o zi lucrătoare, ca să stabilim ora exactă.</li>
-        <li>La prima vizită vorbim, examinăm și îți dăm un plan scris.</li>
-        <li>Nu începem niciun tratament fără acordul tău.</li>
-      </ul>
+<section class="surface" id="programare">
+  <div class="wrap fg">
+    <div class="rv">
+      <h2>Hai să <em>ne cunoaștem</em></h2>
+      <svg class="sk scrub smile" viewBox="0 0 170 80" aria-hidden="true">
+        <path pathLength="1" d="M10 22C40 78 130 78 160 22"/>
+        <path pathLength="1" d="M85 4l2 6 6 2-6 2-2 6-2-6-6-2 6-2Z"/>
+      </svg>
+      <p class="lead">Spune-ne ce te interesează și când îți convine. Te sunăm noi, în timpul programului, pentru a stabili ora exactă.</p>
+      <div class="ct">
+        <div><small>Telefon</small><a href="tel:+40700222333">0700 222 333</a></div>
+        <div><small>Adresă</small><b>Str. Teilor nr. 8, Bacău</b></div>
+        <div><small>Email</small><a href="mailto:salut@lumieredental.example">salut@lumieredental.example</a></div>
+      </div>
     </div>
-    <form id="f" novalidate>
-      <div class="field"><label for="nume">Numele tău</label><input type="text" id="nume" autocomplete="name" required><div class="msg">Scrie numele tău.</div></div>
-      <div class="field"><label for="tel">Număr de telefon</label><input type="tel" id="tel" autocomplete="tel" placeholder="07xx xxx xxx" required><div class="msg">Introdu un număr valid, de exemplu 0712 345 678.</div></div>
-      <div class="field"><label for="srv">Serviciul dorit</label>
-        <select id="srv"><option>Consultație inițială gratuită</option><option>Estetică dentară și fațete</option><option>Implantologie</option><option>Ortodonție / alignere</option><option>Profilaxie și igienizare</option><option>Nu sunt sigur, vreau sfat</option></select></div>
-      <div class="field"><label for="ora">Interval orar preferat</label>
+    <form id="f" class="rv" style="--d:.12s" novalidate>
+      <div class="two">
+        <div class="fl"><label for="nume">Numele tău</label><input id="nume" autocomplete="name" placeholder="Nume și prenume"><div class="err">Scrie numele tău.</div></div>
+        <div class="fl"><label for="tel">Telefon</label><input id="tel" type="tel" autocomplete="tel" placeholder="07xx xxx xxx"><div class="err">Introdu un număr valid, ex. 0712 345 678.</div></div>
+      </div>
+      <div class="fl"><label for="srv">Ce te interesează?</label>
+        <select id="srv"><option>Prima vizită și consultație</option><option>Estetică și fațete</option><option>Implantologie</option><option>Ortodonție</option><option>Igienizare</option><option>Nu sunt sigur, vreau sfat</option></select></div>
+      <div class="fl"><label for="ora">Când îți convine?</label>
         <select id="ora"><option>Dimineața (8:00 – 12:00)</option><option>La prânz (12:00 – 15:00)</option><option>După-amiaza (15:00 – 20:00)</option><option>Sâmbătă (9:00 – 14:00)</option></select></div>
-      <div class="chk"><input type="checkbox" id="gdpr" required><label for="gdpr">Sunt de acord ca Lumière Dental să îmi folosească datele pentru a mă contacta în legătură cu programarea.</label></div>
-      <div class="msg" id="gm" style="margin:-14px 0 14px">Bifează acordul pentru a putea trimite cererea.</div>
-      <button class="btn btn-main" type="submit" style="width:100%">Trimite cererea</button>
+      <button class="btn" type="submit">Trimite cererea <span aria-hidden="true">→</span></button>
       <div class="ok" id="ok" role="status"></div>
+      <p class="fine">Folosim datele tale doar ca să te contactăm în legătură cu programarea.</p>
     </form>
   </div>
 </section>
@@ -302,43 +364,83 @@ footer .logo{color:#fff;margin-bottom:12px}
 
 <footer>
   <div class="wrap">
-    <div class="fg">
-      <div>
-        <div class="logo"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#e3ebe1"/><path d="M7 15c3 8 15 8 18 0" fill="none" stroke="#4f6b55" stroke-width="2.4" stroke-linecap="round"/></svg>Lumière Dental</div>
-        <p>Clinică stomatologică pentru toată familia, cu răbdare și grijă la detalii.</p>
-      </div>
-      <div><h3>Contact</h3><ul>
-        <li>Str. Teilor nr. 8, Bacău</li>
-        <li><a href="tel:+40700222333">0700 222 333</a></li>
-        <li><a href="mailto:salut@lumieredental.example">salut@lumieredental.example</a></li></ul></div>
-      <div><h3>Program</h3><ul>
-        <li>Luni – Vineri: 8:00 – 20:00</li>
-        <li>Sâmbătă: 9:00 – 14:00</li>
-        <li>Duminică: închis</li></ul></div>
-      <div><h3>Navigare</h3><ul>
-        <li><a href="#tratamente">Tratamente</a></li><li><a href="#echipa">Echipa</a></li><li><a href="#incredere">De ce noi</a></li><li><a href="#programare">Programare</a></li></ul></div>
-    </div>
-    <div class="copy">
-      <span>© 2026 Lumière Dental</span>
-      <span>Clinică fictivă, creată cu rol demonstrativ. Medicii, datele de contact și ofertele sunt exemple.</span>
-    </div>
+    <span>© 2026 Lumière Dental · Bacău</span>
+    <span>Clinică fictivă, creată cu rol demonstrativ. Medicii, datele de contact și informațiile sunt exemple.</span>
   </div>
 </footer>
 
 <script>
 (function(){
-  var f=document.getElementById('f'),n=document.getElementById('nume'),t=document.getElementById('tel'),g=document.getElementById('gdpr'),gm=document.getElementById('gm');
-  gm.style.display='none';
+  /* acordeon tratamente */
+  var items=[].slice.call(document.querySelectorAll('.item'));
+  items.forEach(function(it){
+    var b=it.querySelector('.tr');
+    b.addEventListener('click',function(){
+      var open=it.classList.contains('open');
+      items.forEach(function(o){o.classList.remove('open');o.querySelector('.tr').setAttribute('aria-expanded','false');});
+      if(!open){it.classList.add('open');b.setAttribute('aria-expanded','true');}
+    });
+  });
+
+  /* apariție la derulare */
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      var t=e.target;
+      if(e.intersectionRatio>=.12){
+        if(!t.classList.contains('in')){
+          t.style.transition='none';
+          t.style.setProperty('--ty',window.__dir==='up'?'-30px':'30px');
+          void t.offsetWidth;
+          t.style.transition='';
+          t.classList.add('in');
+        }
+      }else if(e.intersectionRatio===0){t.classList.remove('in');}
+    });},{threshold:[0,.12],rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')});}
+
+  /* formular */
+  var f=document.getElementById('f'),n=document.getElementById('nume'),t=document.getElementById('tel');
   f.addEventListener('submit',function(e){
     e.preventDefault();
     var p=t.value.replace(/[\s.\-]/g,'');
-    var v1=n.value.trim().length>1,v2=/^(\+?40|0)7\d{8}$/.test(p)||/^(\+?40|0)[23]\d{8}$/.test(p),v3=g.checked;
-    n.classList.toggle('bad',!v1);t.classList.toggle('bad',!v2);gm.style.display=v3?'none':'block';
-    if(!(v1&&v2&&v3))return;
+    var v1=n.value.trim().length>1,v2=/^(\+?40|0)7\d{8}$/.test(p)||/^(\+?40|0)[23]\d{8}$/.test(p);
+    n.classList.toggle('bad',!v1);t.classList.toggle('bad',!v2);
+    if(!v1||!v2)return;
     var o=document.getElementById('ok');
-    o.textContent='Mulțumim, '+n.value.trim().split(' ')[0]+'! Am primit cererea pentru „'+document.getElementById('srv').value+'”, interval: '+document.getElementById('ora').value.toLowerCase()+'. Te sunăm în cel mult o zi lucrătoare.';
+    o.textContent='Mulțumim, '+n.value.trim().split(' ')[0]+'. Am primit cererea pentru „'+document.getElementById('srv').value.toLowerCase()+'” și te sunăm în cel mai scurt timp.';
     o.style.display='block';f.reset();
   });
+})();
+
+/* mișcare legată de poziția paginii: aceeași în sus și în jos */
+(function(){
+  var rm=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var hero=document.querySelector('.hero'),prog=document.querySelector('.prog'),
+      sks=[].slice.call(document.querySelectorAll('.sk.scrub')),
+      lastY=window.pageYOffset,tick=false;
+  window.__dir='down';
+  function clamp(x,a,b){return Math.max(a,Math.min(b,x));}
+  function frame(){
+    tick=false;
+    var y=window.pageYOffset,vh=window.innerHeight,max=document.documentElement.scrollHeight-vh;
+    prog.style.setProperty('--p',max>0?(y/max).toFixed(4):0);
+    if(rm)return;
+    if(y<vh*1.6)hero.style.setProperty('--sy',y);
+    sks.forEach(function(s){
+      var r=s.getBoundingClientRect();
+      s.style.setProperty('--d',clamp((vh*.88-r.top)/(vh*.5),0,1).toFixed(3));
+    });
+  }
+  window.addEventListener('scroll',function(){
+    var y=window.pageYOffset;
+    if(y>lastY)window.__dir='down';else if(y<lastY)window.__dir='up';
+    lastY=y;
+    if(!tick){tick=true;requestAnimationFrame(frame);}
+  },{passive:true});
+  window.addEventListener('resize',function(){if(!tick){tick=true;requestAnimationFrame(frame);}});
+  frame();
 })();
 </script>
 </body>
